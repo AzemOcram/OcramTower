@@ -36,7 +36,8 @@ var ROOM_IMAGE_MAP = [
 
 var skyLine = new Image();
 var roomImages = [];
-function draw(ctx) {
+var drawOffset = {x: 0, y: 0};
+function draw(ctx, rect) {
 	// gradient 1, will eventually be removed
 	var bggradient = ctx.createLinearGradient(30, 30, 90, 90);
 	bggradient.addColorStop(0, "#FF0000");
@@ -82,24 +83,73 @@ function draw(ctx) {
 	ctx.fillRect(0, 0, 100, 100);
 
 	// Draw all the rooms
+	var FLOOR_HEIGHT = 72;
+	var SECTION_WIDTH = 16;
+	for (var floor = 0; floor < mapArray.length; floor++) {
+		var y = FLOOR_HEIGHT * floor;
 
-	var posX = 0;
-	var posY = 108;
-	var ctx = ctx;
-	for (var i = 0; i < mapArray.length; i++) {
-		for (var j = 0; j < mapArray[i].length; j++) {
-			var roomIndex = mapArray[i][j];
+		// Bail out early to avoid drawing the whole tower every time
+		if (y + FLOOR_HEIGHT < rect.y) continue;
+		if (y > rect.h + rect.y) continue;
+
+		var floorSections = mapArray[floor];
+		for (var section = 0; section < floorSections.length; section++) {
+			var x = SECTION_WIDTH * section;
+			if (x > rect.w + rect.x) continue;
+
+			var roomIndex = mapArray[floor][section];
 			var img = roomImages[roomIndex];
-			ctx.drawImage(img, posX, posY, img.naturalWidth, img.naturalHeight);
-			posX += 16;
+			var w = img.naturalWidth;
+			if (x + w < rect.x) continue;
+
+			ctx.drawImage(img, x, y, w, FLOOR_HEIGHT);
 		}
-		posX = 0
-		posY += 72;
 	}
 }
 
+var ctx;
+function drawFrame() {
+	var x = -drawOffset.x;
+	var y = -drawOffset.y;
+	var w = ctx.canvas.width;
+	var h = ctx.canvas.height;
+	ctx.save();
+	ctx.fillStyle = 'black';
+	ctx.translate(-x, -y);
+	ctx.fillRect(x, y, w, h);
+	draw(ctx, {x: x, y: y, w: w, h: h});
+	ctx.restore();
+	console.log("drawing...");
+	requestAnimationFrame(drawFrame);
+}
+
 window.onload = function() {
-	var ctx = document.getElementById("gameCanvas").getContext('2d');
+	var canvas = document.getElementById("gameCanvas");
+
+	var dragStart = {x: 0, y: 0, started: false};
+	canvas.onmousedown = function (e) {
+		dragStart.x = e.x;
+		dragStart.y = e.y;
+		document.onmousemove = drag;
+		return false;
+	};
+	canvas.onmouseup = function (e) {
+		document.onmousemove = null;
+		return false;
+	};
+	function drag(e) {
+		drawOffset.x += e.x - dragStart.x;
+		drawOffset.y += e.y - dragStart.y;
+		dragStart.x = e.x;
+		dragStart.y = e.y;
+		return false;
+	};
+	document.body.onresize = fillWindow;
+	function fillWindow() {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+	}
+	fillWindow();
 
 	skyLine.src = 'UI/OT_skyline.png';
 	waitFor(skyLine);
@@ -111,7 +161,8 @@ window.onload = function() {
 		roomImages.push(roomImage);
 	}
 
-	waitForAll(ctx);
+	ctx = canvas.getContext('2d');
+	waitForAll();
 }
 
 waitFor.queue = [];
@@ -119,12 +170,12 @@ waitFor.loaded = 0;
 function waitFor(img) {
 	waitFor.queue.push(img);
 }
-function waitForAll(ctx) {
+function waitForAll() {
 	for (var i = 0; i < waitFor.queue.length; i++) {
 		waitFor.queue[i].onload = function () {
 			waitFor.loaded++;
 			if (waitFor.loaded == waitFor.queue.length - 1) {
-				draw(ctx);
+				requestAnimationFrame(drawFrame);
 			}
 		}
 	}
