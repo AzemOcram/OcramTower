@@ -37,15 +37,7 @@ var ROOM_IMAGE_MAP = [
 var skyLine = new Image();
 var roomImages = [];
 var drawOffset = {x: 0, y: 0};
-function draw(ctx, rect) {
-	// gradient 1, will eventually be removed
-	var bggradient = ctx.createLinearGradient(30, 30, 90, 90);
-	bggradient.addColorStop(0, "#FF0000");
-	bggradient.addColorStop(1, "#00FF00");
-	ctx.fillStyle = bggradient;
-	ctx.fillRect(0, 0, 100, 100);
-
-	//gradient 2, background
+function drawBackground(ctx, rect) {
 	var skyGradient = ctx.createLinearGradient(0, 0, 0, 8200);
 	skyGradient.addColorStop(0, '#2040D0');
 	skyGradient.addColorStop(0.1, '#60A0D0');
@@ -67,22 +59,8 @@ function draw(ctx, rect) {
 	ctx.drawImage(skyLine, 4096, 7125);
 	ctx.drawImage(skyLine, 5120, 7125);
 	ctx.drawImage(skyLine, 6144, 7125);
-
-	//gradient 3, to be removed eventually
-	var mygradient3 = ctx.createLinearGradient(60, 60, 120, 120);
-	mygradient3.addColorStop(0, "#0000FF");
-	mygradient3.addColorStop(.5, "#00FFDD");
-	ctx.fillStyle = mygradient3;
-	ctx.fillRect(60, 60, 120, 120);
-
-	// gradient 4, to be removed eventually
-	var mygradient4 = ctx.createLinearGradient(30, 30, 90, 90);
-	mygradient4.addColorStop(0, "#DD33CC");
-	mygradient4.addColorStop(1, "#EEEEEE");
-	ctx.fillStyle = mygradient4;
-	ctx.fillRect(0, 0, 100, 100);
-
-	// Draw all the rooms
+}
+function drawRooms(ctx, rect) {
 	var FLOOR_HEIGHT = 72;
 	var SECTION_WIDTH = 16;
 	for (var floor = 0; floor < mapArray.length; floor++) {
@@ -105,6 +83,10 @@ function draw(ctx, rect) {
 			ctx.drawImage(img, x, y, w, FLOOR_HEIGHT);
 		}
 	}
+}
+function draw(ctx, rect) {
+	drawBackground(ctx, rect);
+	drawRooms(ctx, rect);
 }
 
 var ctx;
