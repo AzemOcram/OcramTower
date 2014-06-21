@@ -12,6 +12,12 @@ body {
 p {
 	background: #EEEEFF;
 }
+#gameCanvas {
+	z-index: 1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
 </style>
 <!--[if IE]>
 	<script type="text/javascript" src = "excanvas.js"></script>
@@ -25,33 +31,9 @@ p {
 The second canvas should have the background of the scene. 
 The third canvas should have the tower and its rooms.
 The fourth canvas should eventually have the transportation (stairs, elevators, escalators) and agents. It currently has only a small square with a gradient.</p>
-
-<canvas id="renderedCanvas" width="800" height="600" style="border: 1px blue solid">
-Your browser doesn't support HTML5 canvas.</canvas>
 <br/>
-<div id="canvasesdiv" style="position:relative; width:7000px; height:8200px">
-<canvas id="backgroundCanvas" 
-style="z-index: 1;
-position:absolute;
-left:0px;
-top:0px; "
-width="5" height="5" >
+<canvas id="gameCanvas" width="800" height="600">
 This text is displayed if your browser does not support HTML5 Canvas. </canvas>
-<canvas id="towerCanvas" 
-style="z-index: 1;
-position:absolute;
-left:0px;
-top:0px; "
-width="7000" height="8200" > 
-This text is displayed if your browser does not support HTML5 Canvas. </canvas>
-<canvas id="transportCanvas" 
-style="z-index: 1;
-position:absolute;
-left:0px;
-top:0px; "
-width="5" height="5" >
-This text is displayed if your browser does not support HTML5 Canvas. </canvas> 
-</div> 
 <br /><br />
 <a href="Index.html">back</a> 
 <br/>
