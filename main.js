@@ -113,14 +113,14 @@ window.onload = function() {
 	var canvas = document.getElementById("gameCanvas");
 
 	var dragStart = {x: 0, y: 0, started: false};
-	canvas.onmousedown = function (e) {
+	window.onmousedown = function (e) {
 		dragStart.x = e.x;
 		dragStart.y = e.y;
-		document.onmousemove = drag;
+		window.onmousemove = drag;
 		return false;
 	};
-	canvas.onmouseup = function (e) {
-		document.onmousemove = null;
+	window.onmouseup = function (e) {
+		window.onmousemove = null;
 		return false;
 	};
 	function drag(e) {
@@ -130,7 +130,7 @@ window.onload = function() {
 		dragStart.y = e.y;
 		return false;
 	};
-	document.body.onresize = fillWindow;
+	window.onresize = fillWindow;
 	function fillWindow() {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
