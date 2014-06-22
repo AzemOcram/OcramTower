@@ -60,15 +60,17 @@ function drawBackground(ctx, rect) {
 	ctx.drawImage(skyLine, 5120, 7125);
 	ctx.drawImage(skyLine, 6144, 7125);
 }
+// Depends on global mapArray, defined in map.js
 function drawRooms(ctx, rect) {
 	var FLOOR_HEIGHT = 72;
 	var SECTION_WIDTH = 16;
+	var MAX_ROOM_HEIGHT = FLOOR_HEIGHT * 5;
 	for (var floor = 0; floor < mapArray.length; floor++) {
 		var y = FLOOR_HEIGHT * floor;
 
 		// Bail out early to avoid drawing the whole tower every time
-		if (y + FLOOR_HEIGHT < rect.y) continue;
 		if (y > rect.h + rect.y) continue;
+		if (y + MAX_ROOM_HEIGHT < rect.y) continue;
 
 		var floorSections = mapArray[floor];
 		for (var section = 0; section < floorSections.length; section++) {
@@ -78,9 +80,11 @@ function drawRooms(ctx, rect) {
 			var roomIndex = mapArray[floor][section];
 			var img = roomImages[roomIndex];
 			var w = img.naturalWidth;
+			var h = img.naturalHeight;
 			if (x + w < rect.x) continue;
+			if (y + h < rect.y) continue;
 
-			ctx.drawImage(img, x, y, w, FLOOR_HEIGHT);
+			ctx.drawImage(img, x, y, w, h);
 		}
 	}
 }
