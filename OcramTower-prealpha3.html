@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OcramTower Prealpha 3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style>
+body {
+	background: #459588;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+h1, img, a {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+h1, a {
+	/* http://stackoverflow.com/questions/4919076/outline-effect-to-text */
+	color: black;
+	text-shadow:
+		-1px -1px 0 #FFF,
+		1px -1px 0 #FFF,
+		-1px 1px 0 #FFF,
+		1px 1px 0 #FFF;
+}
+#gameCanvas {
+	z-index: -1;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+#logo {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+#back {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	color: blue;
+}
+</style>
+<!--[if IE]>
+	<script type="text/javascript" src = "excanvas.js"></script>
+<![endif]-->
+<script src="map2.js"></script>
+<script src="main2.js"></script>
+</head>
+<body>
+<h1>Third Experiment for OcramTower</h1>
+
+<canvas id="gameCanvas">This text is displayed if your browser does not support HTML5 Canvas :( </canvas>
+
+<a id='back' href="index.html">Back to main</a>
+<img id='logo' src = 'UI/OcramCorpv2.png' alt='logo'/>
+</body>
+</html> 
