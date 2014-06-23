@@ -96,7 +96,7 @@ function drawRooms(ctx, rect) {
 	var SECTION_WIDTH = 16;
 	var MAX_ROOM_HEIGHT = FLOOR_HEIGHT * 5;
 	for (var floor = 0; floor < mapArray.length; floor++) {
-		var y = FLOOR_HEIGHT * floor;
+		var y = 108 + FLOOR_HEIGHT * floor;
 
 		// Bail out early to avoid drawing the whole tower every time
 		if (y > rect.h + rect.y) continue;
@@ -104,7 +104,7 @@ function drawRooms(ctx, rect) {
 
 		var floorSections = mapArray[floor];
 		for (var section = 0; section < floorSections.length; section++) {
-			var x = SECTION_WIDTH * section;
+			var x = 1000 + SECTION_WIDTH * section;
 			if (x > rect.w + rect.x) continue;
 
 			var roomIndex = mapArray[floor][section];
