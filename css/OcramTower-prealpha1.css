@@ -1,0 +1,43 @@
+body {
+	background: #459588;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+h1, img, a {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+h1, a {
+	/* http://stackoverflow.com/questions/4919076/outline-effect-to-text */
+	color: black;
+	text-shadow:
+		-1px -1px 0 #FFF,
+		1px -1px 0 #FFF,
+		-1px 1px 0 #FFF,
+		1px 1px 0 #FFF;
+}
+
+#gameCanvas {
+	z-index: -1;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+#logo {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#back {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	color: blue;
+}
