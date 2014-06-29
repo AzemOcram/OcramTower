@@ -135,7 +135,9 @@ function drawFrame() {
 	ctx.fillRect(x, y, w, h);
 	draw(ctx, {x: x, y: y, w: w, h: h});
 	ctx.restore();
+
 	console.log("drawing...");
+
 	requestAnimationFrame(drawFrame);
 }
 
@@ -143,28 +145,34 @@ window.onload = function() {
 	var canvas = document.getElementById("gameCanvas");
 
 	var dragStart = {x: 0, y: 0, started: false};
+	
 	window.onmousedown = function (e) {
-		dragStart.x = e.x;
-		dragStart.y = e.y;
+		dragStart.x = e.clientX;
+		dragStart.y = e.clientY;
 		window.onmousemove = drag;
 		return false;
 	};
+	
 	window.onmouseup = function (e) {
 		window.onmousemove = null;
 		return false;
 	};
+	
 	function drag(e) {
-		drawOffset.x += e.x - dragStart.x;
-		drawOffset.y += e.y - dragStart.y;
-		dragStart.x = e.x;
-		dragStart.y = e.y;
+		drawOffset.x += e.clientX - dragStart.x;
+		drawOffset.y += e.clientY - dragStart.y;
+		dragStart.x = e.clientX;
+		dragStart.y = e.clientY;
+
 		return false;
 	};
+	
 	window.onresize = fillWindow;
 	function fillWindow() {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 	}
+	
 	fillWindow();
 
 	skyLine.src = 'UI/OT_skyline.png';
