@@ -37,6 +37,9 @@ var ROOM_IMAGE_MAP = [
 var skyLine = new Image();
 var roomImages = [];
 var drawOffset = {x: 0, y: 0};
+
+var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
 function drawBackground(ctx, rect) {
 	var skyGradient = ctx.createLinearGradient(0, 0, 0, 8200);
 	skyGradient.addColorStop(0, '#2040D0');
