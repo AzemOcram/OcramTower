@@ -62,6 +62,11 @@ var ROOM_IMAGE_MAP = [
 	'Rooms/HighriseDev/Hotel_D_u.png',
 	'Rooms/HighriseDev/Hotel_K_u.png',
 	'Rooms/HighriseDev/Hotel_LS_u.png',
+	'Lobbies/MM_GrandLobby-3star.png',
+	'Lobbies/MM_GrandLobby-3star-left.png',
+	'Lobbies/MM_Mezzanine-3star.png',
+	'Lobbies/MM_Mezzanine-3star-left.png',
+	'Lobbies/MM_SkyLobby-3star-left.png',
 ];
 
 var skyLine = new Image();
