@@ -19,7 +19,7 @@
 <CanBeDestroyed>True</CanBeDestroyed>
 <Variant>
     <Occupant>Empty</Occupant>
-	<Description>An office room that you may lease out to companies. If demand for offices is low you can always advertise.</Description>
+	<Description>A standard office room that you may lease out to companies. If demand for offices is low you can always advertise.</Description>
 	<dayImage>Rooms/Default/Office-0-day-0.png</dayImage>
 	<nightImage>Rooms/Default/Office-0-night-0.png</nightImage>
 	<Population>0</Population>
