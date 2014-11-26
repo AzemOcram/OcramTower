@@ -20,8 +20,8 @@
 <Variant>
     <Occupant>Empty</Occupant>
 	<Description>A standard office room that you may lease out to companies. If demand for offices is low you can always advertise.</Description>
-	<dayImage>Rooms/Default/Office-0-day-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-0-night-0.png</nightImage>
+	<dayImage>Rooms/Default/office-0-day-0.png</dayImage>
+	<nightImage>Rooms/Default/office-0-night-0.png</nightImage>
 	<Population>0</Population>
 	<Resource> 
 	<Electricity>-6</Electricity>
@@ -37,8 +37,8 @@
 <Variant>
     <Occupant>1</Occupant>
 	<Description>An office room that has been leased out to companies. Try to keep them satisfied.</Description>
-	<dayImage>Rooms/Default/Office-1-dayoccupied-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-1-nightoccupied-0.png</nightImage>
+	<dayImage>Rooms/Default/office-1-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/office-1-nightoccupied-0.png</nightImage>
 	<Population>4</Population>
 	<Resource> 
 	<Electricity>-10</Electricity>
@@ -54,8 +54,8 @@
 <Variant>
     <Occupant>2</Occupant>
 	<Description>An office room that has been leased out to companies. Try to keep them satisfied.</Description>
-	<dayImage>Rooms/Default/Office-2-dayoccupied-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-2-nightoccupied-0.png</nightImage>
+	<dayImage>Rooms/Default/office-2-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/office-2-nightoccupied-0.png</nightImage>
 	<Population>4</Population>
 	<Resource> 
 	<Electricity>-10</Electricity>
@@ -71,8 +71,8 @@
 <Variant>
     <Occupant>3</Occupant>
 	<Description>An office room that has been leased out to companies. Try to keep them satisfied.</Description>
-	<dayImage>Rooms/Default/Office-3-dayoccupied-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-3-nightoccupied-0.png</nightImage>
+	<dayImage>Rooms/Default/office-3-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/office-3-nightoccupied-0.png</nightImage>
 	<Population>4</Population>
 	<Resource> 
 	<Electricity>-10</Electricity>
@@ -88,8 +88,8 @@
 <Variant>
     <Occupant>4</Occupant>
 	<Description>An office room that has been leased out to companies. Try to keep them satisfied.</Description>
-	<dayImage>Rooms/Default/Office-4-dayoccupied-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-4-nightoccupied-0.png</nightImage>
+	<dayImage>Rooms/Default/office-4-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/office-4-nightoccupied-0.png</nightImage>
 	<Population>4</Population>
 	<Resource> 
 	<Electricity>-10</Electricity>
@@ -105,8 +105,8 @@
 <Variant>
     <Occupant>5</Occupant>
 	<Description>An office room that has been leased out to companies. Try to keep them satisfied.</Description>
-	<dayImage>Rooms/Default/Office-5-dayoccupied-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-5-nightoccupied-0.png</nightImage>
+	<dayImage>Rooms/Default/office-5-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/office-5-nightoccupied-0.png</nightImage>
 	<Population>4</Population>
 	<Resource> 
 	<Electricity>-10</Electricity>
@@ -122,8 +122,8 @@
 <Variant>
     <Occupant>6</Occupant>
 	<Description>An office room that has been leased out to companies. Try to keep them satisfied.</Description>
-	<dayImage>Rooms/Default/Office-6-dayoccupied-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-6-nightoccupied-0.png</nightImage>
+	<dayImage>Rooms/Default/office-6-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/office-6-nightoccupied-0.png</nightImage>
 	<Population>4</Population>
 	<Resource> 
 	<Electricity>-10</Electricity>
@@ -139,8 +139,8 @@
 <Variant>
     <Occupant>7</Occupant>
 	<Description>An office room that has been leased out to companies. Try to keep them satisfied.</Description>
-	<dayImage>Rooms/Default/Office-7-dayoccupied-0.png</dayImage>
-	<nightImage>Rooms/Default/Office-7-nightoccupied-0.png</nightImage>
+	<dayImage>Rooms/Default/office-7-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/office-7-nightoccupied-0.png</nightImage>
 	<Population>4</Population>
 	<Resource> 
 	<Electricity>-10</Electricity>
