@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OcramTower info on Rooms</title>
+<script src="jquery-2.1.1.js"></script>
+<style>
+body {
+	background: #80C0FF;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+</head>
+
+<body>
+<h1>Info on Rooms in OcramTower</h1>
+<h2>Including variations of occupants</h2>
+
+<script>
+    $(document).ready(function()
+      {
+        $('body').append('<table />');
+		
+        jQuery.fn.loadRoom = function(xml, roomtype) {
+        $.get( xml, function(roomtype) {
+ 
+        $(roomtype).find('Variant').each(function(){
+            
+            var variant = $(this);
+            var population = variant.find("Population").text();
+            var description = variant.find('Description').text();
+            var dayImage = variant.find('dayImage').text();
+            
+			var html = '<tr><td> <img class="dayPic" alt="" src="' + dayImage + '" /> </td>';
+			
+            html += '<td><p class="Population"> Population Count:' + population + '</p></td>';
+            html += '<td><p>' + description + '</p></td>' ;
+            html += '</tr>';
+			//$(html).appendTo(this);
+
+            $('table').append($(html));
+            
+            return true;   			
+
+        });
+    });
+        
+	};
+$('table').loadRoom('OT_Studio.xml', 'Studio');
+$('table').loadRoom('OT_Office.xml', 'Office');
+$('table').loadRoom('OT_largeOffice.xml', 'lgOffice');
+});
+</script>
+
+<p>Hopefully this helped. jQuery made it work.</p>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Room ID="Studio">
+<Type>Apartment</Type>
+<Name>Studio Apartment</Name>
+<Name_Plural>Studio Apartments</Name_Plural>
+<icon>UI/Icon-StudioApartment.png</icon>
+<Cost>10000</Cost>
+<starRequirement>1</starRequirement>
+<PaymentFrequency>monthly</PaymentFrequency>
+<PaymentAmount_VeryLow>1000</PaymentAmount_VeryLow>
+<PaymentAmount_Low>2000</PaymentAmount_Low>
+<PaymentAmount_Average>3000</PaymentAmount_Average>
+<PaymentAmount_High>4000</PaymentAmount_High>
+<PaymentAmount_VeryHigh>5000</PaymentAmount_VeryHigh>
+<TileWidth>4</TileWidth>
+<TileHeight>1</TileHeight>
+<DestructionCost>100</DestructionCost>
+<CanBeDestroyed>True</CanBeDestroyed>
+<Variant>
+    <Occupant>Empty</Occupant>
+	<Description>A small studio apartment you can rent out to office workers. If demand for apartments is low you can always advertise.</Description>
+	<dayImage>Rooms/Default/apartment-studio-day-0.png</dayImage>
+	<nightImage>Rooms/Default/apartment-studio-night-0.png</nightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-4</Electricity>
+    <Water>0</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+	<CleaningNeeds>None</CleaningNeeds>
+    <CleaningFrequency>None</CleaningFrequency>
+    <CleaningDay>None</CleaningDay>
+	<RestroomNeeds>False</RestroomNeeds>
+    <TenantSoundSet>emptyrooms</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>1</Occupant>
+	<Description>A small studio apartment rented out to a lonely office worker. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/apartment-studio-1-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/apartment-studio-1-nightoccupied-0.png</nightImage>
+	<Population>1</Population>
+	<Resource> 
+	<Electricity>-6</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>None</CleaningNeeds>
+    <CleaningFrequency>None</CleaningFrequency>
+    <CleaningDay>None</CleaningDay>
+	<RestroomNeeds>False</RestroomNeeds>
+    <TenantSoundSet>studioApt</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>2</Occupant>
+	<Description>A small studio apartment rented out to a lonely office worker. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/apartment-studio-2-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/apartment-studio-2-nightoccupied-0.png</nightImage>
+	<Population>1</Population>
+	<Resource> 
+	<Electricity>-6</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>None</CleaningNeeds>
+    <CleaningFrequency>None</CleaningFrequency>
+    <CleaningDay>None</CleaningDay>
+	<RestroomNeeds>False</RestroomNeeds>
+    <TenantSoundSet>studioApt</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>3</Occupant>
+	<Description>A small studio apartment rented out to a lonely office worker. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/apartment-studio-3-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/apartment-studio-3-nightoccupied-0.png</nightImage>
+	<Population>1</Population>
+	<Resource> 
+	<Electricity>-6</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>None</CleaningNeeds>
+    <CleaningFrequency>None</CleaningFrequency>
+    <CleaningDay>None</CleaningDay>
+	<RestroomNeeds>False</RestroomNeeds>
+    <TenantSoundSet>studioApt</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>4</Occupant>
+	<Description>A small studio apartment rented out to a lonely office worker. Try to keep them satisfied..</Description>
+	<dayImage>Rooms/Default/apartment-studio-4-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/apartment-studio-4-nightoccupied-0.png</nightImage>
+	<Population>1</Population>
+	<Resource> 
+	<Electricity>-6</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>None</CleaningNeeds>
+    <CleaningFrequency>None</CleaningFrequency>
+    <CleaningDay>None</CleaningDay>
+	<RestroomNeeds>False</RestroomNeeds>
+    <TenantSoundSet>studioApt</TenantSoundSet>
+</Variant>
+</Room>

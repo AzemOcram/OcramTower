@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Room ID="Lobby">
+<Type>Lobby</Type>
+<Name>Lobby</Name>
+<Name_Plural>Lobbies</Name_Plural>
+<icon>UI/Icon-Lobby.png</icon>
+<Cost>5000</Cost>
+<starRequirement>1</starRequirement>
+<TileWidth>1</TileWidth>
+<TileHeight>1</TileHeight>
+<DestructionCost>100</DestructionCost>
+<CanBeDestroyed>False</CanBeDestroyed>
+<Variant>
+    <Occupant>1star</Occupant>
+	<Description>A basic lobby. Required for Oaties to enter the tower.</Description>
+	<leftImage>Lobbies/MM_Lobby-1star-left.png</leftImage>
+	<rightImage>Lobbies/MM_Lobby-1star.png</rightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-1</Electricity>
+    <Water>0</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+    <TenantSoundSet>lobby</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>2star</Occupant>
+	<Description>Required for Oaties to enter the tower. Upgrades with star level.</Description>
+	<leftImage>Lobbies/MM_Lobby-2star-left.png</leftImage>
+	<rightImage>Lobbies/MM_Lobby-2star.png</rightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-1</Electricity>
+    <Water>0</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+    <TenantSoundSet>lobby</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>3star</Occupant>
+	<Description>Required for Oaties to enter the tower. Upgrades with star level.</Description>
+	<leftImage>Lobbies/MM_Lobby-3star-left.png</leftImage>
+	<rightImage>Lobbies/MM_Lobby-3star.png</rightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-1</Electricity>
+    <Water>0</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+    <TenantSoundSet>lobby</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>4star</Occupant>
+	<Description>Required for Oaties to enter the tower. Upgrades with star level.</Description>
+	<leftImage>Lobbies/MM_Lobby-3star-left.png</leftImage>
+	<rightImage>Lobbies/MM_Lobby-4star.png</rightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-1</Electricity>
+    <Water>1</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+    <TenantSoundSet>lobby</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>5star</Occupant>
+	<Description>Required for Oaties to enter the tower. Upgrades with star level.</Description>
+	<leftImage>Lobbies/MM_Lobby-5star-left.png</leftImage>
+	<rightImage>Lobbies/MM_Lobby-5star.png</rightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-2</Electricity>
+    <Water>1</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+    <TenantSoundSet>lobby</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>Tower</Occupant>
+	<Description>Lobby for the most prestigious towers. Required for Oaties to enter the tower.</Description>
+	<leftImage>Lobbies/MM_Lobby-5star-left.png</leftImage>
+	<rightImage>Lobbies/MM_Lobby-Tower.png</rightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-2</Electricity>
+    <Water>1</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+    <TenantSoundSet>lobby</TenantSoundSet>
+</Variant>
+</Room>

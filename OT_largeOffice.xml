@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Room ID="Large Office">
+<Type>Office</Type>
+<Name>Large Office</Name>
+<Name_Plural>Large Offices</Name_Plural>
+<icon>UI/Icon-LargeOffice.png</icon>
+<Cost>120000</Cost>
+<starRequirement>3</starRequirement>
+<PaymentFrequency>monthly</PaymentFrequency>
+<PaymentAmount_VeryLow>1100</PaymentAmount_VeryLow>
+<PaymentAmount_Low>2200</PaymentAmount_Low>
+<PaymentAmount_Average>3300</PaymentAmount_Average>
+<PaymentAmount_High>4400</PaymentAmount_High>
+<PaymentAmount_VeryHigh>5500</PaymentAmount_VeryHigh>
+<TileWidth>10</TileWidth>
+<TileHeight>1</TileHeight>
+<DestructionCost>100</DestructionCost>
+<CanBeDestroyed>True</CanBeDestroyed>
+<Variant>
+    <Occupant>Empty</Occupant>
+	<Description>A large office room that you may lease out to companies. If demand for offices is low you can always advertise.</Description>
+	<dayImage>Rooms/Default/largeOffice-0-day-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-0-night-0.png</nightImage>
+	<Population>0</Population>
+	<Resource> 
+	<Electricity>-6</Electricity>
+    <Water>0</Water>
+    <Garbage>0</Garbage>
+	</Resource>
+	<CleaningNeeds>None</CleaningNeeds>
+    <CleaningFrequency>None</CleaningFrequency>
+    <CleaningDay>None</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>emptyrooms</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>1</Occupant>
+	<Description>A meeting room.</Description>
+	<dayImage>Rooms/Default/largeOffice-1-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-1-nightoccupied-0.png</nightImage>
+	<Population>5</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Sat</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>ConferenceRoom</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>2</Occupant>
+	<Description>A meeting room.</Description>
+	<dayImage>Rooms/Default/largeOffice-2-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-2-nightoccupied-0.png</nightImage>
+	<Population>7</Population>
+	<Resource> 
+	<Electricity>-12</Electricity>
+    <Water>4</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Sat</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>ConferenceRoom</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>3</Occupant>
+	<Description>A meeting room.</Description>
+	<dayImage>Rooms/Default/largeOffice-3-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-3-nightoccupied-0.png</nightImage>
+	<Population>6</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Sat</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>ConferenceRoom</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>4</Occupant>
+	<Description>A meeting room.</Description>
+	<dayImage>Rooms/Default/largeOffice-4-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-4-nightoccupied-0.png</nightImage>
+	<Population>7</Population>
+	<Resource> 
+	<Electricity>-12</Electricity>
+    <Water>4</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Sat</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>ConferenceRoom</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>5</Occupant>
+	<Description>A meeting room.</Description>
+	<dayImage>Rooms/Default/largeOffice-5-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-5-nightoccupied-0.png</nightImage>
+	<Population>6</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Sat</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>ConferenceRoom</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>6</Occupant>
+	<Description>A large office room that has been leased out to companies. Very productive. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/largeOffice-6-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-6-nightoccupied-0.png</nightImage>
+	<Population>5</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>2</Water>
+    <Garbage>5</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Weekdays</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>Office</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>7</Occupant>
+	<Description>A large office room that has been leased out to companies. Very productive. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/largeOffice-7-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-7-nightoccupied-0.png</nightImage>
+	<Population>5</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>2</Water>
+    <Garbage>5</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Weekdays</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>Office</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>8</Occupant>
+	<Description>A large office room that has been leased out to companies. Very productive. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/largeOffice-8-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-8-nightoccupied-0.png</nightImage>
+	<Population>5</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>2</Water>
+    <Garbage>5</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Weekdays</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>Office</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>9</Occupant>
+	<Description>A large office room that has been leased out to companies. Very productive and high tech. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/largeOffice-9-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-9-nightoccupied-0.png</nightImage>
+	<Population>5</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>2</Water>
+    <Garbage>5</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Weekdays</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>Office</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>10</Occupant>
+	<Description>A meeting room.</Description>
+	<dayImage>Rooms/Default/largeOffice-10-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-10-nightoccupied-0.png</nightImage>
+	<Population>5</Population>
+	<Resource> 
+	<Electricity>-12</Electricity>
+    <Water>2</Water>
+    <Garbage>3</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Weekdays</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>Office</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>11</Occupant>
+	<Description>A large office room that has been leased out to companies. Very productive and high tech. Try to keep them satisfied.</Description>
+	<dayImage>Rooms/Default/largeOffice-11-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-11-nightoccupied-0.png</nightImage>
+	<Population>5</Population>
+	<Resource> 
+	<Electricity>-10</Electricity>
+    <Water>3</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Sat</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>ConferenceRoom</TenantSoundSet>
+</Variant>
+<Variant>
+    <Occupant>12</Occupant>
+	<Description>An executive's private office. Hates noise.</Description>
+	<dayImage>Rooms/Default/largeOffice-12-dayoccupied-0.png</dayImage>
+	<nightImage>Rooms/Default/largeOffice-12-nightoccupied-0.png</nightImage>
+	<Population>1</Population>
+	<Resource> 
+	<Electricity>-7</Electricity>
+    <Water>2</Water>
+    <Garbage>2</Garbage>
+	</Resource>
+	<CleaningNeeds>Recommended</CleaningNeeds>
+    <CleaningFrequency>Weekly</CleaningFrequency>
+    <CleaningDay>Weekdays</CleaningDay>
+	<RestroomNeeds>True</RestroomNeeds>
+    <TenantSoundSet>Office</TenantSoundSet>
+</Variant>
+</Room>
